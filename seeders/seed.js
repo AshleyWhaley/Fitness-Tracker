@@ -7,7 +7,7 @@ mongoose.connect("mongodb://localhost/workout", {
   useFindAndModify: false,
   useUnifiedTopology: true,
   useCreateIndex: true
-});
+}).then(console.log('Connected to mongo db!'))
 
 let workoutSeed = [
   {

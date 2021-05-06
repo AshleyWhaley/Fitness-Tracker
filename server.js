@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Heroku deployed db
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/young-sea", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/thawing-lake-68040", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
