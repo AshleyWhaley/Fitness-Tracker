@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Heroku deployed db
+heroku config:set MONGODB_URI="mongodb+srv://root:fitnesstracker@fitnesstracker.k3tfn.mongodb.net/fitness_trackerdb?retryWrites=true&w=majority"
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/thawing-lake-68040", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
